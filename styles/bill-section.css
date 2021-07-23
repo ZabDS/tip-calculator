@@ -1,0 +1,11 @@
+.bill-section{
+    text-align: left;
+    position: relative;
+}
+
+.bill-section > i{
+    color: rgb(126, 126, 126);
+    margin-left: 10px;
+    position: absolute;
+    top:55%;
+}

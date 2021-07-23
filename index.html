@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./styles/index.css">
+  <link rel="stylesheet" type="text/css" href="./styles/bill-section.css">
+  <link rel="stylesheet" type="text/css" href="./styles/tip-section.css">
+  <link rel="stylesheet" type="text/css" href="./styles/people-section.css">
+  <link rel="stylesheet" type="text/css" href="./styles/result-form.css">
+  <link rel="stylesheet" type="text/css" href="./styles/attribution.css">
+
+  <script src="https://kit.fontawesome.com/c2f38f2a3e.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script type="module" src="./scripts/index.js"></script>
+
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <p class="title"><span>SPLI<br>TTER</span></p>
+  <div class="principal-card">
+    <section class="input-form">
+      <div class="bill-section">
+        <p class="label-field">Bill</p>
+        <i class="fas fa-dollar-sign"></i>
+        <input id="bill-field" class="field" placeholder="0">
+      </div>
+      <div class="tip-section">
+      <p class="label-field">Select Tip %</p>
+        <div class="tip-btn-wrapper">
+          <input id="btn-5" class="tip-btn" type="button" value="5%">
+          <input id="btn-10" class="tip-btn" type="button" value="10%">
+          <input id="btn-15" class="tip-btn" type="button" value="15%">
+          <input id="btn-25" class="tip-btn" type="button" value="25%">
+          <input id="btn-50" class="tip-btn" type="button" value="50%">
+          <input id="tip-custom-field" placeholder="Custom">
+        </div>
+      </div>
+      <div class="people-section">
+        <div>
+          <p class="label-field">Number of People</p>
+          <p class="label-field-error">Can't be zero</p>
+        </div>
+        <i class="fas fa-user-alt"></i>
+        <input id="people-field" class="field" placeholder="0">
+      </div>
+    </section>
+    <section class="result-form">
+      <div class="result-label-wrapper">
+        <div class="result-section">
+          <div class="label-wrapper">
+            <p class="result-label">Tip Amount</p>
+            <p class="subresult-label">/ person</p>  
+          </div>
+          <div>
+            <p id="tip-amount-lbl" class="calculate-label">$0.00</p>
+          </div>
+        </div>
+        <div class="result-section">
+          <div class="label-wrapper">
+            <p class="result-label">Total</p>
+            <p class="subresult-label">/ person</p>
+          </div>
+          <div>
+            <p id="total-lbl" class="calculate-label">$0.00</p>
+          </div>
+        </div>
+      </div>
+      <input id="reset-btn" type="button" value="RESET">
+    </section>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Iván Zabdiel Díaz Sotelo</a>.
+  </div>
+</body>
+</html>

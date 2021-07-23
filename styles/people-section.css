@@ -1,0 +1,30 @@
+.people-section{
+    text-align: left;
+    margin-top: 35px;
+}
+
+.label-field-error{
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(143, 0, 0);
+    visibility: hidden;
+}
+
+.people-section > div{
+    display: flex;
+    justify-content: space-between;
+}
+.people-section{
+    position: relative;
+}
+
+.people-section > i{
+    color: rgb(126, 126, 126);
+    margin-left: 10px;
+
+    position: absolute;
+    top:60%;
+}
+

@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 400;
+    background-color: hsl(185, 41%, 84%);
+    text-align: center;
+}
+
+.principal-card{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: hsl(189, 41%, 97%);
+    max-width: 600px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: space-around;
+
+    padding:20px;
+    border-radius: 20px;
+}
+
+.label-field{
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(126, 126, 126);
+}
+.field{
+    width: 90%;
+    padding: 7px 10px;
+
+    font-size: 18px;
+    text-align: right;
+    color:hsl(186, 14%, 43%);
+    font-weight: 800;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.field:focus{
+    border: 2px solid hsl(185, 41%, 84%);
+    padding: 5px 10px;
+    box-shadow: 0 0 10px hsl(185, 41%, 84%);
+}
+
+.title{
+    color:hsl(186, 14%, 43%);
+    margin-top: 20px;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 600px) {
+    .principal-card{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+        top: 65%
+    }
+    .title{
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .attribution{
+        visibility: hidden;
+    }
+    .people-section{
+        margin-bottom: 10px;
+    }
+}

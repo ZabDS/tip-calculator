@@ -1,0 +1,55 @@
+.tip-section{
+    text-align: left;
+    margin-top: 25px;
+}
+
+.tip-btn-wrapper{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.tip-btn{
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.tip-btn:hover{
+    color:hsl(183, 100%, 15%);;
+    border-radius: 5px;
+    background-color: rgba(38,194,173,255);
+}
+
+.tip-btn-selected{
+    color:hsl(183, 100%, 15%);;
+    border-radius: 5px;
+    background-color: rgba(38,194,173,255);
+}
+
+#tip-custom-field{
+    padding: 5px 5px;
+
+    font-size: 14px;
+    text-align: right;
+    color:hsl(186, 14%, 43%);
+    font-weight: 800;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#tip-custom-field:focus{
+    border: 2px solid hsl(185, 41%, 84%);
+    padding: 3px 5px;
+    box-shadow: 0 0 10px hsl(185, 41%, 84%);
+}

@@ -1,0 +1,61 @@
+.result-form{
+    background-color: hsl(183, 100%, 15%);
+    color:white;
+
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+.result-label-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.result-section{
+    display: flex;
+    flex-direction: row;
+
+    justify-content:space-between;
+    align-items: center;
+    max-height: 100px;
+    padding:0;
+    margin:0;
+}
+
+.label-wrapper{
+    text-align: left;
+}
+
+.result-label{
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.subresult-label{
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 0;
+    color: rgb(126, 126, 126);
+}
+
+.calculate-label{
+    font-size: 32px;
+    color:rgba(38,194,173,255);
+    font-weight: 900;
+}
+
+#reset-btn{
+    width: 80%;
+    padding: 10px 10px;
+
+    background-color: rgba(38,194,173,255);
+    
+    font-size: 14px;
+    font-weight: 800;
+    color: hsl(183, 100%, 15%);
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
